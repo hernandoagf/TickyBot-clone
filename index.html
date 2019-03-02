@@ -2,7 +2,9 @@
 <html>
 	<head>
 		<title>TickyBot clone</title>
-		<link rel="stylesheet" href="styles/styles.css" />
+		<meta name="theme-color" content="#40596b">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Signika:300,600">
+		<link rel="stylesheet" href="styles/styles.css">
 		<script async src="./javascript/index.js"></script>
 	</head>
 	<body>
@@ -28,7 +30,7 @@
 		</header>
 		<main>
 			<section id="home">
-				<div class="container" id="home-container">
+				<div id="home-container">
 					<div id="home-description">
 						<h1><strong>Ticky</strong>Bot</h1>
 						<p>Let your team manage their support tickets 100% inside Slack</p>
@@ -105,23 +107,74 @@
 						    C135.6,293.6,132,309.2,132,321.6z" />
 						    <path style="fill:#FFFFFF;" d="M314,188c-4.4,0-8.8,1.2-12.4,3.2c-4.4-10-13.2-16.8-24-16.8h-47.2c-10.8,0-19.6,7.2-24,16.8
 						    c-3.6-2-8-3.2-12.4-3.2c-14,0-25.6,11.6-25.6,25.6s11.6,25.6,25.6,25.6c5.2,0,9.6-1.6,13.6-4l2.8,20.4c2,14.8,13.2,25.6,26.4,25.6
-						    h34c13.2,0,24.4-10.8,26.4-25.6l2.8-20.4c4,2.4,8.8,4,13.6,4c14,0,25.6-11.6,25.6-25.6C339.6,199.2,328,188,314,188z"
-						    />
+						    h34c13.2,0,24.4-10.8,26.4-25.6l2.8-20.4c4,2.4,8.8,4,13.6,4c14,0,25.6-11.6,25.6-25.6C339.6,199.2,328,188,314,188z"/>
 						  </g>
 						</svg>
 					</div>
 				</div>
 			</section>
 			<section id="about">
-				<h1>dsadsadsadasdssa<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd</h1>
+				<div id="about-container">
+					<h3 class="web-title">What Is <strong>Ticky</strong>Bot</h3>
+					<div class="side-paragraph">
+						<p><strong>Ticky</strong>Bot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
+					</div>
+					<div class="side-paragraph">
+						<p>With <strong>Ticky</strong>Bot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p>
+					</div>
+					<div class="full-paragraph">
+						<p>Support requests shouldn't be handled through Slack's direct messages.<br><i>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</i></p>
+					</div>
+				</div>
 			</section>
 			<section id="features">
-				<h1>dsadsadsadasdssa<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd</h1>
+				<div id="features-container">
+					<h3 class="web-title">How It Works</h3>
+					<div class="features-cards">
+						<img src="images/workplace.svg">
+						<div class="card-description">
+							<p>You can add <strong>Ticky</strong>Bot to your Slack workplace by scrolling down or <a href="https://tickybott.herokuapp.com/#cta">clicking here</a></p>
+						</div>
+					</div>
+					<div class="features-cards">
+						<img src="images/bubble.svg">
+						<div class="card-description">
+							<p>Your users can open a ticket by typing <code>/ticket</code> and their message into the chat field</p>
+						</div>
+					</div>
+					<div class="features-cards">
+						<img src="images/tasks.svg">
+						<div class="card-description">
+							<p>Once you or another admin solved their problems you can type <code>/ticket close #id</code> to close the ticket</p>
+						</div>
+					</div>
+				</div>
 			</section>
 			<section id="starttoday">
-				<h1>dsadsadsadasdssa<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd<br>sadsadasdas<br>asdasdasd</h1>
+				<div id="starttoday-container">
+					<h3 class="web-title">Start Using <strong>Ticky</strong>Bot Today</h3>
+					<div id="starttoday-description">
+						<p id="st-p"><strong>Ticky</strong>Bot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+						<a id="starttoday-button" class="button" href="https://slack.com/oauth/authorize?client_id=39189849459.249480535796&scope=commands,bot,users%2Eprofile%3Aread,im%3Aread,chat%3Awrite%3Abot,team%3Aread">
+							<img src="images/slack.svg" alt="">
+							<span>Add to <strong>Slack</strong></span>
+						</a>
+						<p id="st-pp">... so you don't need to go back and forth with another app.</p>
+					</div>
+				</div>
 			</section>
 		</main>
-		<footer></footer>
+		<footer>
+			<div id="footer-container">
+				<p>Cloned with 💪 by hernandoagf</p>
+				<br>
+				<p>Source code is available on my <a href="https://github.com/hernandoagf">GitHub page</a></p>
+				<br>
+				<p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+			</div>
+		</footer>
+		<button onclick="topFunction()" id="topBtn" title="Go to top">
+			<img src="images/top.svg">
+		</button>
 	</body>
 </html>
